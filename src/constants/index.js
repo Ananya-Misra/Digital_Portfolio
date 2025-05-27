@@ -1,29 +1,26 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-  } from "../assets";
+  aws,
+  backend,
+  carrent,
+  creator,
+  docker,
+  dotnet,
+  githubactions,
+  grpc,
+  java,
+  jobit,
+  langchain,
+  mobile,
+  mongodb,
+  postgressql,
+  prometheus,
+  reactjs,
+  redis,
+  terraform,
+  tripguide,
+  unthinkable,
+  web
+} from "../assets";
   
   export const navLinks = [
     {
@@ -42,176 +39,127 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
       title: "Backend Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Cloud/DevOps Enthusiast",
+      icon: web,
+    },
+    {
+      title: "API Specialist",
+      icon: mobile,
+    },
+   
+    {
+      title: "Full-Stack Contributor",
       icon: creator,
     },
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
+    { 
+      name: "Java",
+      icon: java,
     },
     {
-      name: "CSS 3",
-      icon: css,
+      name: ".NET",
+      icon: dotnet,
     },
     {
-      name: "JavaScript",
-      icon: javascript,
+      name: "PostgreSQL",
+      icon: postgressql,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
+      name: "docker",
+      icon: docker,
+    },
+    {
+      name: "Github Actions",
+      icon: githubactions,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
+      name: "Terraform",
+      icon: terraform,
     },
     {
-      name: "Tailwind CSS",
-      icon: tailwind,
+      name: "AWS",
+      icon: aws,
     },
     {
-      name: "Node JS",
-      icon: nodejs,
+      name: "Redis",
+      icon: redis,
+    },
+    {
+      name: "Prometheus",
+      icon: prometheus,
+    },
+    {
+      name: "gRPC",
+      icon: grpc,
+    },
+    {
+      name: "LangChain", 
+      icon: langchain,
     },
     {
       name: "MongoDB",
-      icon: mongodb,
+      icon: mongodb
     },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+  
   ];
   
   const experiences = [
-    {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+      {
+        title: "Software Engineer",
+        company_name: "Unthinkable Solutions",
+        icon: unthinkable, // You'll need to add/import this icon
+        iconBg: "#383E56",
+        date: "Nov 2023 - Present",
+        points: [
+          "Developed microservices architecture with gRPC and Protocol Buffers, reducing latency by 30%",
+          "Designed RESTful APIs with Swagger documentation achieving 70% higher test coverage",
+          "Optimized MongoDB/PostgreSQL queries improving response time by 40%",
+          "Implemented CI/CD pipeline improvements reducing deployment failures",
+          "Enhanced cloud performance by 35% through GCP optimization",
+          "Implemented log masking for data privacy compliance"
+        ],
+      },
+      {
+        title: "Software Engineer Intern",
+        company_name: "Unthinkable Solutions",
+        icon: unthinkable,
+        iconBg: "#E6DEDD",
+        date: "Apr 2023 - Oct 2023",
+        points: [
+          "Built production-ready APIs with Swagger documentation",
+          "Improved code quality by 70% through SonarQube standards",
+          "Resolved database bottlenecks in MongoDB/PostgreSQL",
+          "Reduced deployment issues by 30% through CI/CD collaboration"
+        ],
+      }
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Cold Email Generator",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "LangChain",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "ChromaDb",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "python",
           color: "pink-text-gradient",
         },
       ],
@@ -219,7 +167,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Podcaster",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -240,7 +188,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "CoWrite",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -261,5 +209,20 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+   
   
-  export { services, technologies, experiences, testimonials, projects };
+ const calculateSizes = (isSmall, isMobile, isTablet) => {
+  return {
+    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.06,
+    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -6.8, 0],
+    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    javaLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 5, 0] : [12, 5, 0],
+    ringPosition: isSmall ? [-6, 7, 0] : isMobile ? [-10, 11, 0] : isTablet ? [-12, 11, 0] : [-24, 11, 0],
+    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+  };
+};
+
+const colors = ["#13FFAA", "#1E67C6", "#CE84CF"];
+
+  export { calculateSizes, colors, experiences, projects, services, technologies };
+

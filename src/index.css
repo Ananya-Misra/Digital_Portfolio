@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Varela+Round&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,9 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Varela Round", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+  
+}
+body {
+  background-color: theme('colors.tertiary');
+  overflow-x: hidden;
 }
 
 .hash-span {
@@ -26,6 +29,8 @@
     #434343,
     #000000
   ); /* Chrome 10-25, Safari 5.1-6 */
+
+  
   background: linear-gradient(
     to right,
     #434343,
@@ -201,4 +206,16 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+
 }
+  .vertical-timeline::before {
+    background: "#00cea8";
+    background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    width: 4px !important;
+  }
+  
+  .vertical-timeline-element-icon {
+  
+    box-shadow: 0 0 0 4px #ec008c inset 0 2px 0 rgba(0,0,0,0.08) !important;
+  }

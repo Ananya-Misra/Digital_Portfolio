@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,17 +20,30 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
+import grpc from "./tech/grpc.png";
+import java from "./tech/java.png";
+import terraform from "./tech/terraform.png";
+import githubactions from "./tech/githubactions.png";
+import prometheus from "./tech/prometheus.png";
+import redis from "./tech/redis.png";
+import dotnet from "./tech/dotnet.png";
+import postgressql from "./tech/postgressql.png";
+import aws from "./tech/aws.png";
+import langchain from "./tech/langchain.png";
+import unthinkable from "./company/unthinkable.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  grpc,
+  java,
+  dotnet,
+  postgressql,
+  terraform,
+  githubactions,
+  prometheus,
+  redis,
   logo,
   backend,
   creator,
@@ -44,6 +57,7 @@ export {
   figma,
   git,
   html,
+  aws,
   javascript,
   mongodb,
   nodejs,
@@ -52,11 +66,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  langchain,
   carrent,
   jobit,
   tripguide,
+  unthinkable
 };

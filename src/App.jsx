@@ -3,34 +3,48 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
-  Hero,
+  Hero2,
   Navbar,
   Tech,
   Works,
-  StarsCanvas,
-} from "./components";
+} from "./sections";
 
+import { motion, useMotionTemplate } from "framer-motion";
+import { useEffect, useState } from "react";
+import { StarsCanvas } from "./components/canvas";
+import { colors } from "./constants";
 const App = () => {
-  return(
-  <BrowserRouter>
-  <div className="relative z-0 bg-primary">
-    <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-      <Navbar/>
-      <Hero/>
-    </div>
-    <About/>
-    <Experience/>
-    <Tech/>
-    <Works/>
-    <div className="relative z-0">
-      <Contact/>
-      <StarsCanvas/>
-    </div>
+  const [starColor, setStarColor] = useState(colors[0]);
 
-  </div>
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      index = (index + 1) % colors.length;
+      setStarColor(colors[index]);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
-  </BrowserRouter>)
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Hero2 />
+      <About />
+      <Experience />
+      <Tech />
+      <Works />
+      <motion.div
+        className="relative min-h-screen"
+        style={{
+          background: useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${starColor})`,
+          transition: "background 1.5s cubic-bezier(0.65, 0, 0.35, 1)",
+        }}
+      >
+        <Contact />
+        <StarsCanvas color={starColor} />
+      </motion.div>
+    </BrowserRouter>
+  );
 };
 
 export default App;
