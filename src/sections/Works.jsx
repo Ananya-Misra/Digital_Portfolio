@@ -1,13 +1,30 @@
-import React from "react";
 import { motion } from "framer-motion";
+import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ project, index }) => {
   const isEven = index % 2 === 0;
   const projectKey = project.name.toLowerCase();
+
+  const fadeIn = (direction, type, delay, duration) => ({
+    hidden: {
+      x: direction === "left" ? -40 : direction === "right" ? 40 : 0, // Reduced from ±100 to ±40
+      opacity: 0,
+    },
+    show: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: type,
+        delay: delay,
+        duration: duration || 0.75, // Default duration
+        ease: [0.16, 0.77, 0.47, 0.97], // Custom bezier curve
+        bounce: 0.2, // If using spring
+      },
+    },
+  });
 
   return (
     <motion.div
@@ -25,7 +42,6 @@ const ProjectCard = ({ project, index }) => {
         />
       </div>
 
-      {/* Content section - full width on mobile, flex-1 on desktop */}
       <div className="w-full lg:flex-1" key={`content-${projectKey}`}>
         <h1 className="text-2xl font-bold mb-2 text-white-100">
           {project.name}
@@ -89,7 +105,7 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20 overflow-x-hidden">
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${project.name
