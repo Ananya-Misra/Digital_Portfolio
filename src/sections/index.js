@@ -1,20 +1,13 @@
-import HeroAlternative from './HeroAlternative';
+import About from './About';
+import Contact from './Contact';
+import Experience from './Experience';
+import Feedbacks from './Feedbacks';
 import Hero2 from './Hero2';
 import Navbar from './Navbar';
-import About from './About';
 import Tech from './Tech';
-import Experience from './Experience';
 import Works from './Works';
-import Feedbacks from './Feedbacks';
-import Contact from './Contact';
 
 export {
-  Hero2,
-  Navbar,
-  About,
-  Tech,
-  Experience,
-  Works,
-  Feedbacks,
-  Contact,
-}
+  About, Contact, Experience, Feedbacks, Hero2,
+  Navbar, Tech, Works
+};

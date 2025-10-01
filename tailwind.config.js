@@ -6,6 +6,9 @@ module.exports = {
     extend: {
       fontFamily: {
         generalsans: ["'General Sans'", "sans-serif"],
+        varela: ['"Varela Round"', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'], 
+        fredericka: ['"Fredericka the Great"', "serif"],
       },
       colors: {
         primary: "#050816",

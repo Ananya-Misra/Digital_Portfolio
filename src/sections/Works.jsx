@@ -79,7 +79,6 @@ const ProjectCard = ({ project, index }) => {
 };
 
 const Projects = () => {
-  // Create unique projects array in case of duplicates
   const uniqueProjects = projects.reduce((acc, current) => {
     const x = acc.find((item) => item.name === current.name);
     if (!x) {

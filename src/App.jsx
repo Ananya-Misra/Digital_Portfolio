@@ -13,6 +13,7 @@ import { motion, useMotionTemplate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { StarsCanvas } from "./components/canvas";
 import { colors } from "./constants";
+import Project from "./sections/Project";
 const App = () => {
   const [starColor, setStarColor] = useState(colors[0]);
 
@@ -32,7 +33,7 @@ const App = () => {
       <About />
       <Experience />
       <Tech />
-      <Works />
+      <Project />
       <motion.div
         className="relative min-h-screen"
         style={{

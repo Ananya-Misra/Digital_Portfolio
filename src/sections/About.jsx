@@ -34,8 +34,12 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText} font-frederika`}>
+          Introduction
+        </p>
+        <h2 className={`${styles.sectionHeadText} font-frederika`}>
+          Overview.
+        </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -48,7 +52,7 @@ const About = () => {
         development fundamentals. Passionate about building secure,
         production-ready solutions through collaborative problem-solving.
       </motion.p>
-      <div className="mt-10 flex flex-wrap gap-10">
+      <div className="mt-10 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
