@@ -22,7 +22,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import grpc from "./tech/grpc.png";
 import java from "./tech/java.png";
-import terraform from "./tech/terraform.png";
+import azuredevops from "./tech/azuredevops.png";
 import githubactions from "./tech/githubactions.png";
 import prometheus from "./tech/prometheus.png";
 import redis from "./tech/redis.png";
@@ -40,7 +40,7 @@ export {
   java,
   dotnet,
   postgressql,
-  terraform,
+  azuredevops,
   githubactions,
   prometheus,
   redis,

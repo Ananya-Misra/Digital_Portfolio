@@ -16,7 +16,7 @@ import {
   prometheus,
   reactjs,
   redis,
-  terraform,
+  azuredevops,
   tripguide,
   unthinkable,
   web
@@ -83,8 +83,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Terraform",
-    icon: terraform,
+    name: "AzureDevops",
+    icon: azuredevops,
   },
   {
     name: "AWS",
@@ -117,7 +117,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company_name: "Unthinkable Solutions",
-    icon: unthinkable, // You'll need to add/import this icon
+    icon: unthinkable, 
     iconBg: "#383E56",
     date: "Nov 2023 - Present",
     points: [
